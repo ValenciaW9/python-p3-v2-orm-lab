@@ -1,15 +1,13 @@
 
 # lib/review.py
 class Review:
-    all = {}
-
-    def __init__(self, year, summary, employee_id, id=None):
+      all = {}
+def __init__(self, year, summary, employee_id, id=None):
         self.id = id
         self.year = year
         self.summary = summary
         self.employee_id = employee_id
-
-    def __repr__(self):
+def __repr__(self):
         return f"<Review {self.id}: {self.year}, {self.summary}, Employee ID: {self.employee_id}>"
 
     @classmethod

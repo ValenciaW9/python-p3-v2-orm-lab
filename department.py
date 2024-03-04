@@ -1,15 +1,12 @@
 # lib/department.py
 class Department:
-    all = {}
-
-    def __init__(self, name, location, id=None):
-        self.id = id
-        self.name = name
-        self.location = location
-
-    def __repr__(self):
-        return f"<Department {self.id}: {self.name}, {self.location}>"
-
+  all = {}
+def __init__(self, name, location, id=None):
+    self.id = id
+    self.name = name
+    self.location = location
+def __repr__(self):
+    return f"<Department {self.id}: {self.name}, {self.location}>"
     @property
     def name(self):
         return self._name
