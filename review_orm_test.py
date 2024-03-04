@@ -1,6 +1,7 @@
 from employee import Employee
 from review import Review
 from department import Department
+from config import CONN, CURSOR
 import pytest
 
 
@@ -128,5 +129,5 @@ class TestReview:
         department = Department.create("Payroll", "Building A, 5th Floor")
 
         Employee.create_table()
-        employee = Employee.create("Raha",
+        employee = Employee.create("Raha")
  
